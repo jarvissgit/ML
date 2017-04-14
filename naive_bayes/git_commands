@@ -1,0 +1,1 @@
+git push jarvis --all -u [Pushes the new local branch with the same name to remote]
