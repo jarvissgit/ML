@@ -80,3 +80,14 @@
 ![fig5]
 [fig5]: ./chris_sara_pp.png
 
+* Why is it called Naive Bayes?
+	* because it does not consider the order of the words(events)
+
+* Naive Bayes (PROS)
+	* easy to implement
+	* works well with great, big feature spaces (for e.g. there are around 20,000 to 2,00,000 words in the English language
+	* simple to run and is efficient
+
+* Naive Bayes (CONS)
+	* can break e.g. Google search of Chicago Bulls during earlier times
+* Use theoretical understanding to decide whether an algorithm will work for a particular problem or not
