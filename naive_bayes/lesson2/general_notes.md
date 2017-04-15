@@ -61,6 +61,22 @@
 		* P(^C | Pos) = P(^C, Pos)/P(^C) = 0.099/0.108 = 0.916667
 	* Now the values add up to 1.0
 * Bayes Rule Diagram
+
 ![fig2] 
 [fig2]: ./bayes_rule_diagram.png
+
+* Bayes Rule for Classification
+	* Bayes Rule is used a lot for learning from documents or text learning
+![fig3]
+[fig3]: ./chris_sara_problem.png
+
+
+![fig4]
+[fig4]: ./chris_sara_answer.png
+* We have to multiply the prior probabilities to obtain the final probability
+
+* Quiz : Posterior Probabilities
+	* normalization of the probabilities with the sum of their non-normalized vaues is required
+![fig5]
+[fig5]: ./chris_sara_pp.png
 
