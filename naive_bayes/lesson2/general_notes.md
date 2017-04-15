@@ -24,16 +24,43 @@
 		* P(Pos|^C) = 0.1 **prior probability of the test being positive and the person not having cancer**
 
 	2. POSTERIOR
-		* P(C | Pos) = P(C) X P(Pos | C) = 0.009 = 0.9% 
+		* P(C , Pos) = P(C) X P(Pos | C) = 0.009 = 0.9% 
 			- __P(C|Pos) is posterior of the probability of cancer given that the test says positive__
-			- __P(C) is prior probability of cancer
+			- __P(C) is prior probability of cancer__
 			- __P(Pos | C) is probability of positive result given that a person has cancer. This is the test sensitivity.__
-		* P(^C | Pos) = P(^C) X P(Pos | ^C) = 0.099 = 9.9%
+		* P(^C , Pos) = P(^C) X P(Pos | ^C) = 0.099 = 9.9%
 			- __P(^C|Pos) is posterior of the probability of not having cancer given that the test says positive__
-			- __P(^C) is prior probability of not having cancer
+			- __P(^C) is prior probability of not having cancer__
 			- __P(Pos | ^C) is probability of positive result given that a person does not have cancer.__
 
 ![fig1] 
-[fig1]: nb1.png
+[fig1]: ./nb1.png
 	
 	* But probabilities do not add upto 1
+	
+* Quiz: Normalizing 1
+	*compute the normalized values such that the ratio remains same but they add upto 1
+		* addition gives 0.108
+		* P(Pos) = P(C,Pos) + P(^C,Pos) = 0.108
+
+	* The posterior that we calculated earlier is actually the joint probability of two events
+	* JOINT PROBABILITY OF TWO EVENTS 
+		* P(C , Pos) = P(C) X P(Pos | C) = 0.009 = 0.9% 
+			- __P(C,Pos) is posterior of the probability of cancer given that the test says positive__
+			- __P(C) is prior probability of cancer__
+			- __P(Pos | C) is probability of positive result given that a person has cancer. This is the test sensitivity.__
+		* P(^C , Pos) = P(^C) X P(Pos | ^C) = 0.099 = 9.9%
+			- __P(^C,Pos) is posterior of the probability of not having cancer given that the test says positive__
+			- __P(^C) is prior probability of not having cancer__
+			- __P(Pos | ^C) is probability of positive result given that a person does not have cancer.__
+	* NORMALIZES
+		* P(Pos) = P(C,Pos) + P(^C,Pos) = 0.108
+	* POSTERIOR
+		* P(C | Pos) = P(C, Pos)/P(Pos) = 0.009/0.108 = 0.083333
+		* The posterior probability of cancer given the test is positive is obtained by dividing P(C, Pos) with the normalizer P(Pos). **Can this be inferred from the first equation of joint probability? Seems like the terms inside brackets are reversed!**
+		* P(^C | Pos) = P(^C, Pos)/P(^C) = 0.099/0.108 = 0.916667
+	* Now the values add up to 1.0
+* Bayes Rule Diagram
+![fig2] 
+[fig2]: ./bayes_rule_diagram.png
+
