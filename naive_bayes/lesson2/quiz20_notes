@@ -1,0 +1,9 @@
+Quiz: Calculating NB Accuracy
+
+In this example, we print the accuracy. However, the quiz is slightly different in that you return the accuracy, rather than printing it directly.
+
+Remember, accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
+
+There's another way you can do this, too--
+print clf.score(features_test, labels_test)
+
