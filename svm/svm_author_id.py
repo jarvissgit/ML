@@ -31,32 +31,30 @@ import pylab as pl
 
 from sklearn.svm import SVC
 
-clist = [10.0,100.0,1000.0,10000.0]
 
 ###############################
 # code for smaller training set
 
-features_train = features_train[:len(features_train)/100]
-labels_train = labels_train[:len(labels_train)/100]
+#features_train = features_train[:len(features_train)/100]
+#labels_train = labels_train[:len(labels_train)/100]
 ##############################
 
-for c in clist:
-    clf = SVC(kernel="rbf",C=c)
+clf = SVC(kernel="rbf",C=10000.0)
 
-    t0 = time()
-    clf.fit(features_train, labels_train)
-    #print "training time:", round(time()-t0, 3), "s"
-    traintime = round(time()-t0, 3)
-    print "c value",'\t',"training time",'\t',"prediction time",'\t',"accuracy"
-    t1 = time()
-    pred = clf.predict(features_test)
-    #print "prediction time:", round(time()-t1, 3), "s"
-    predtime = round(time()-t1, 3)
+t0 = time()
+clf.fit(features_train, labels_train)
+print "training time:", round(time()-t0, 3), "s"
+#traintime = round(time()-t0, 3)
+#print "c value",'\t',"training time",'\t',"prediction time",'\t',"accuracy"
+t1 = time()
+pred = clf.predict(features_test)
+print "prediction time:", round(time()-t1, 3), "s"
+#predtime = round(time()-t1, 3)
 
-    from sklearn.metrics import accuracy_score
-    acc = accuracy_score(pred, labels_test)
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(pred, labels_test)
+print "prediction accuracy:", acc
 
-    print c,'\t',traintime,'\t',predtime,'\t',acc
-    #########################################################
+#########################################################
 
 
