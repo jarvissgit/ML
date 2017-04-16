@@ -31,6 +31,14 @@ import pylab as pl
 
 from sklearn.svm import SVC
 clf = SVC(kernel="linear")
+
+###############################
+# code for smaller training set
+
+features_train = features_train[:len(features_train)/100]
+labels_train = labels_train[:len(labels_train)/100]
+##############################
+
 t0 = time()
 clf.fit(features_train, labels_train)
 print "training time:", round(time()-t0, 3), "s"
