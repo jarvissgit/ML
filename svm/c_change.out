@@ -1,0 +1,10 @@
+no. of Chris training emails: 7936
+no. of Sara training emails: 7884
+c value 	training time 	prediction time 	accuracy
+10.0 	0.189 	2.118 	0.616040955631
+c value 	training time 	prediction time 	accuracy
+100.0 	0.189 	2.113 	0.616040955631
+c value 	training time 	prediction time 	accuracy
+1000.0 	0.184 	2.021 	0.821387940842
+c value 	training time 	prediction time 	accuracy
+10000.0 	0.188 	1.702 	0.892491467577
