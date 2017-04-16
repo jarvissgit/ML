@@ -30,7 +30,7 @@ import numpy as np
 import pylab as pl
 
 from sklearn.svm import SVC
-clf = SVC(kernel="linear")
+clf = SVC(kernel="rbf")
 
 ###############################
 # code for smaller training set
