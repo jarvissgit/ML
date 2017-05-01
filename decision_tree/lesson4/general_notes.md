@@ -31,3 +31,13 @@
 
 ## comparison of decision tree output
 * {'acc_min_samples_split_50': 0.912, 'acc_min_samples_split_2': 0.908}
+
+## Data impurity and entropy
+* Entropy controls how a decision tree decides where to split the data
+* Definition: It is a measure of impurity in a bunch of examples
+* During DT classification, we are trying to find variables and split points along those variables that will make the subsets as pure as possible. The DT makes its decisions by repeating the process repeatedly.
+* Entropy formula:
+![f1]
+(https://latex.codecogs.com/png.latex?entropy&space;=&space;\sum_{i}-P_{i}log_{2}(P_{i}))
+
+![Entropy formula](./CodeCogsEqn.png)
