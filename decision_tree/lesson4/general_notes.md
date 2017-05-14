@@ -41,3 +41,8 @@
 (https://latex.codecogs.com/png.latex?entropy&space;=&space;\sum_{i}-P_{i}log_{2}(P_{i}))
 
 ![Entropy formula](./CodeCogsEqn.png)
+
+## Formula for information gain
+
+## Bias-variance dilemma
+* If a ML system has a large bias, it will basically ignore all the data. So no matter how much you train, it will not do anything differently
